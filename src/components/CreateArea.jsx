@@ -9,21 +9,6 @@ function CreateArea(props) {
 
   function handleChange(event){ // get value and name of the input box
     const {value, name} = event.target;
-
-    // setNewNote( (prevValue) => {
-    //   if (name === "title"){
-    //     return {
-    //       title:value,
-    //       content:prevValue.content
-    //     }
-    //   }else{
-    //     return {
-    //       title:prevValue.title,
-    //       content:value
-    //     }
-    //   }
-    // });
-    // };
     
     setNewNote( (prevValue) => { 
       return { // return an object with previous data and [name]:value which give the name and value of the event and change the object accordingly 
